@@ -6,14 +6,18 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
+    <div id="wrapper">
     <header id="page-header">
       <h1><a href="index.html">Startup Matchmaker</a></h1>
       <nav>
+        <a href="#" id="hamburger">&#9776;</a>
+        <div id="menu">
         <a href="developers.html">Developers</a>
         <a href="designers.html">Designers</a>
         <a href="how.html">How it Works</a>
         <a href="team.html">Our Team</a>
         <a href="blog.html">Blog</a>
+        </div>
       </nav>
     </header>
 
@@ -48,5 +52,12 @@
     <footer>
       &copy; 2017 Startup Matchmaker. Made in NY.
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $("#hamburger").on("click", function(){
+          $("#menu").slideToggle(400);
+        });
+      </script>
+    </div>
   </body>
 </html>
