@@ -7,7 +7,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   line-height: 1.5;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -65,6 +65,20 @@ header h1 {
   font-family: "Merriweather", serif;
   font-size: 30px;
   margin: 20px 0 0 0;
+}
+
+#page-header nav {
+  float: right;
+}
+
+#page-header nav li {
+  float: left;
+  list-style-type: none;
+}
+
+#page-header nav a {
+  display: block;
+  padding: 20px 15px;
 }
 
 header nav {
@@ -150,4 +164,52 @@ footer {
   background: black;
   color: white;
   padding: 25px 40px;
+}
+
+#page-header nav.mobilelines {
+  display: none;
+}
+
+/* mobile */
+@media screen and (max-width: 700px) {
+
+#page-header nav.desktopnav {
+  display: none;
+}
+
+#page-header nav.mobilelines {
+  display: inline-block;
+  width: 65px;
+  padding-top: 10px;
+}
+
+#page-header nav.mobilelines li.line {
+  height: 5px;
+  background-color: yellow;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+p.tagline {
+  display: none;
+}
+
+.blurb {
+  background: rgba(255,255,255,.8);
+  width: 70%;
+  margin: 0 auto;
+  padding: 4%;
+  float: none;
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.callouts {
+  display: inline-block;
+}
+
+.callout {
+  width: 100%;
+  float: none;
+}
+
 }
