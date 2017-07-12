@@ -10,6 +10,12 @@ body {
   width: 1280px;
   margin: 0 auto;
 }
+#container{
+  max-width: 1200px;
+  width: 80%;
+  margin: 1% auto;
+  overflow: hidden;
+}
 
 h1 {
   font-size: 40px;
@@ -151,3 +157,44 @@ footer {
   color: white;
   padding: 25px 40px;
 }
+
+@media only screen and (max-width: 1133px){
+  nav {
+    padding: 5% 0%;
+    font-size: 16px;
+}
+body{
+  font-size: 16px;
+}
+nav a {
+    display: block;
+    width: 100%;
+    padding:;
+  }
+
+@media only screen and (max-width: 1130px){
+p {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: .75em;
+  }
+  .tagline, .blurb p {
+    display: none;
+  }
+  .blurb {
+    width: 60%;
+  }
+  .callout {
+    width: auto;
+    float: none;
+    border: none;
+  }
+
+
